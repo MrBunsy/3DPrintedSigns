@@ -19,7 +19,7 @@
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,14 +29,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1601"
-     inkscape:window-height="1027"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.91690769"
-     inkscape:cx="198.7872"
-     inkscape:cy="128.24168"
-     inkscape:window-x="1991"
+     inkscape:zoom="1.2967033"
+     inkscape:cx="272.77109"
+     inkscape:cy="272.05023"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10" /><g
@@ -46,5 +46,5 @@
      transform="matrix(1.3333333,0,0,-1.3333333,0,364)"><path
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.13333333"
        d="M 209.36719 0.23242188 C 199.44719 0.27108854 190.78787 5.5242606 186.0332 13.433594 L 7.0996094 323.30078 C 2.6631562 331.39091 2.4453076 341.51361 7.3671875 350.09961 C 12.330214 358.63502 21.207061 363.50703 30.433594 363.69922 L 388.30078 363.69922 C 397.46078 363.50703 406.33642 358.63502 411.23242 350.09961 C 416.22176 341.51361 416.00215 331.39091 411.63281 323.30078 L 232.69922 13.433594 C 227.87389 5.5242606 219.21785 0.27108854 209.36719 0.23242188 z M 209.36719 46.099609 L 371.90039 327.83398 L 46.699219 327.83398 L 209.36719 46.099609 z "
-       transform="matrix(0.75000002,0,0,-0.75000002,0,273.00001)"
-       id="path14" /></g></svg>
+       id="path14"
+       transform="matrix(0.75000002,0,0,-0.75000002,0,273.00001)" /></g></svg>
