@@ -27,11 +27,12 @@ Path("out").mkdir(parents=True, exist_ok=True)
 
 class Sign():
 
-    def __init__(self, name, base, details, colours, mmu=True, height=4, layer_height=0.2):
+    def __init__(self, name, base, details, colours, base_colour, mmu=True, height=4, layer_height=0.2):
         self.name = name
         self.base = base
         self.details = details
         self.colours = colours
+        self.base_colour = base_colour
         self.mmu = mmu
         self.height = height
         self.layer_height = layer_height
@@ -41,6 +42,7 @@ class Sign():
         baseJob.addVariable("BASE_FILE", self.base)
         baseJob.addVariable("DETAIL_FILES", self.details)
         baseJob.addVariable("COLOURS", self.colours)
+        baseJob.addVariable("BASE_COLOUR", self.base_colour)
         baseJob.addVariable("LAYER_HEIGHT", self.layer_height)
         baseJob.addVariable("MMU", self.mmu)
         return baseJob
@@ -105,8 +107,8 @@ if __name__ == '__main__':
     layer_height = 0.2
 
     signs = [
-        Sign("TrainWarning","771_background.svg",["771_inner.svg","771_outline.svg"],["white","black","red"],True,height,layer_height),
-        Sign("EndOfBicycleLane","965.svg",["965_inner.svg"],["blue","white"], True, height, layer_height)
+        Sign("TrainWarning","771_background.svg",["771_inner.svg","771_outline.svg"],["white","black","red"], "white", True,height,layer_height),
+        Sign("EndOfBicycleLane","965.svg",["965_inner.svg"],["blue","white"], "white", True, height, layer_height)
     ]
     jobs = []
 
