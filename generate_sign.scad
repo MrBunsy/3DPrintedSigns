@@ -1,9 +1,13 @@
 include<generic_sign.scad>
 
-BASE_FILE = "771_background.svg";
-DETAIL_FILES = ["771_inner.svg","771_outline.svg"];
+//BASE_FILE = "771_background.svg";
+//DETAIL_FILES = ["771_inner.svg","771_outline.svg"];
 //[background, details...]
-COLOURS = ["white","black","red"];
+//COLOURS = ["white","black","red"];
+
+BASE_FILE = "956_base.svg";
+DETAIL_FILES = ["956_blue.svg"];
+COLOURS = ["white","blue"];
 HEIGHT = 4;
 LAYER_HEIGHT = 0.2;
 MMU = true;

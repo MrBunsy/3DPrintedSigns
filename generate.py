@@ -80,6 +80,15 @@ class JobDescription():
         else:
             self.variables[name] = value
 
+    def addVariables(self, dict):
+        '''
+        given dict of ["variable name"] = value, add them all
+        :param dict:
+        :return:
+        '''
+        for key in dict:
+            self.addVariable(key, dict[key])
+
     def getVariableString(self):
         return " ".join(["-D {varname}={varvalue}".format(varname=key,varvalue=self.variables[key]) for key in self.variables])
 
@@ -107,8 +116,23 @@ if __name__ == '__main__':
     layer_height = 0.2
 
     signs = [
-        Sign("TrainWarning","771_background.svg",["771_inner.svg","771_outline.svg"],["white","black","red"], "white", True,height,layer_height),
-        Sign("EndOfBicycleLane","965.svg",["965_inner.svg"],["blue","white"], "white", True, height, layer_height)
+        # Sign("ExampleName", "ShapeOfSign.svg", ["BlackBits.svg", "RedBits.svg"], ["backgroundColour", "Black", "Red"], "ColourOfBackOfSign", MultiMaterial?, height, layer_height),
+        # Sign("TrainWarning","771_background.svg",["771_inner.svg","771_outline.svg"],["white","black","red"], "white", True,height,layer_height),
+        # Sign("EndOfBicycleLane","965.svg",["965_inner.svg"],["blue","white"], "white", True, height, layer_height),
+        # Sign("BicycleWarning","950_base.svg",["950_inner.svg","950_outer.svg"],["white","black","red"], "white", True,height,layer_height),
+        # Sign("MiniRoundabout","611.1_base.svg",["611.1_inner.svg"],["blue","white"], "white", True,height,layer_height*2),
+        # Sign("BicyleLane", "956_base.svg", ["956_white.svg"], ["blue", "white"], "white", True, height,layer_height * 2),
+        # Sign("NoUTurns", "614_base.svg", ["614_red.svg", "614_black.svg"], ["white", "red", "black"], "white", True, height, layer_height * 2),
+        # Sign("TramsOnly", "953.1_base.svg", ["953.1_white.svg"], ["blue", "white"], "white", True, height, layer_height * 2),
+        # Sign("Derestricted", "671_base.svg", ["671_black.svg"], ["white", "black"], "white", True, height, layer_height * 2),
+        # Sign("NoStopping", "642_base.svg", ["642_red.svg"], ["blue", "red"], "red", True, height, layer_height * 2),
+#        Sign("NoEntry", "616_base.svg", ["616_red.svg"], ["white", "red"], "white", True, height, layer_height * 2),
+#         Sign("EndOfHGVRestriction", "622.2_base.svg", ["622.2_grey.svg", "622.2_black.svg"], ["white", "grey", "black"], "white", True, height, layer_height * 2),
+#         Sign("BlueArrow", "610_base.svg", ["610_blue.svg"], ["white", "blue"], "white", True, height, layer_height * 2),
+#         Sign("LeftArrow", "609_base.svg", ["609_blue.svg"], ["white", "blue"], "white", True, height, layer_height * 2),
+       # Sign("Priority", "615_base.svg", ["615_red.svg", "615_black.svg"], ["white", "red", "black"], "white", True, height, layer_height * 2),
+        #Sign("NoMotorVehicles", "619_base.svg", ["619_red.svg", "619_black.svg"], ["white", "red", "black"], "white", True, height, layer_height * 2),
+        Sign("Limit30", "670V30_base.svg", ["670V30_red.svg", "670V30_black.svg"], ["white", "red", "black"], "white",True, height, layer_height * 2),
     ]
     jobs = []
 
